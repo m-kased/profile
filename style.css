@@ -23,7 +23,7 @@ p {
     padding-bottom: 90px !important;
     position: relative;
 }
-.nav-sticky .navbar-nav li a:hover{
+.nav-sticky .navbar-nav li a:hover {
     color: #1cad98;
 }
 .bg-overlay {
@@ -262,7 +262,7 @@ p {
     width: 100%;
 }
 .bg-gradient {
-    background: linear-gradient(to right,#67d8c7,#077565);
+    background: linear-gradient(to right, #67d8c7, #077565);
 }
 .nav-tabs {
     background: #f8f9fa;
@@ -491,7 +491,7 @@ p {
     margin: 8px 0;
     color: red;
 }
-.skills-text{
+.skills-text {
     text-align: center;
     display: block;
     margin: auto;
@@ -501,7 +501,6 @@ p {
 }
 .skills-icon {
     margin-top: 20px;
-
 }
 #ajaxsuccess {
     font-size: 16px;
@@ -555,20 +554,23 @@ p {
     font-family: Montserrat, sans-serif;
     font-size: 20px;
 }
-.navbar:before,.navbar:after,.clear-after-before:after,.clear-after-before:before{
+.navbar:before,
+.navbar:after,
+.clear-after-before:after,
+.clear-after-before:before {
     content: none;
 }
-@media (max-width: 992px){
-    .container>.navbar-collapse{
+@media (max-width: 992px) {
+    .container > .navbar-collapse {
         border-top: 1px solid;
         margin-top: 13px;
     }
 }
 @media (min-width: 200px) and (max-width: 768px) {
-    .skills-text{
+    .skills-text {
         font-size: 13px;
     }
-    .container>.navbar-collapse{
+    .container > .navbar-collapse {
         border-top: 1px solid;
         margin-top: 13px;
     }
@@ -634,13 +636,13 @@ p {
 .navbar-custom .navbar-nav li a:hover, .navbar-custom .navbar-nav li.active a{
     
 } */
-a{
+a {
     color: #07c5a9;
 }
 /* a:hover,a:active,a:focus,a:visited{
     color: rgb(255, 255, 255);
 } */
-.btn-custom:hover{
+.btn-custom:hover {
     color: #ffffff;
 }
 .bg-custom,
@@ -1131,19 +1133,53 @@ select.is-success-110293 {
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.elevator {
+    border-radius: 5px;
+    background-color: rgb(1, 14, 27);
+    background-color: rgba(1, 14, 27, 0.7);
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    display: block;
+    right: 15px;
+    bottom: 15px;
+    border: none;
+    opacity: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elevator .fa {
+    color: white;
+    font-size: 22px;
+}
+
+.elevator:hover {
+    opacity: 1;
+    background-color: rgb(1, 14, 27);
+    background-color: rgba(1, 14, 27, 0.9);
+}
+
+.isVisible {
+    opacity: 0.8;
+    z-index: 4;
+    transition: all 0.4s ease-in;
+}
