@@ -1215,3 +1215,11 @@ select.is-success-110293 {
     z-index: 4;
     transition: all 0.4s ease-in;
 }
+
+.text-muted{
+    color: #41464a !important;
+    font-size: 14px;
+}
+.mb-3, .my-3 {
+	margin-bottom: 2rem !important;
+}
